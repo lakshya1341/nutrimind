@@ -10,7 +10,7 @@ Once compiled, users can interact with a responsive dietitian dashboard and inst
 
 - 📋 **5-Step Personalization Wizard**:
   - **Step 1 (Physical Profile)**: Ingests age, biological sex, height, and weight with real-time field-boundary validation.
-  - **Step 2 (Primary Goal)**: Dynamic calorie adjustment scaling for *Lose weight*, *Build muscle*, *Gain weight*, *Maintain composition*, or *Healthy eating*.
+  - **Step 2 (Primary Goal)**: Dynamic calorie adjustment scaling for _Lose weight_, _Build muscle_, _Gain weight_, _Maintain composition_, or _Healthy eating_.
   - **Step 3 (Lifestyle & Habits)**: Accommodates active sleep hours, daily water glass tallies, and safety guidance for clinical medical conditions.
   - **Step 4 (Preferences & Safety)**: Custom selections for diet categories (Vegetarian, Non-Veg, Vegan, Eggetarian), food allergies (exclusive toggles), and preferred culinary cuisines.
   - **Step 5 (Profile Assessment)**: Displays estimated Basal Metabolic Rate (BMR) metrics using the Mifflin-St Jeor formula before sending inputs to the model.
@@ -40,32 +40,44 @@ Once compiled, users can interact with a responsive dietitian dashboard and inst
 ## 🚀 Getting Started
 
 ### 1. Installation
+
 Navigate into the directory and install all of the project library dependencies:
+
 ```bash
 cd ~/Desktop/nutrimind
 npm install
 ```
 
 ### 2. Configure Credentials (Optional)
+
 To set a default API key, copy the environment file and replace the placeholder value:
+
 ```bash
 cp .env.example .env  # Or simply open the .env file in the root
 ```
+
 In `.env`:
+
 ```env
 VITE_GEMINI_API_KEY=your_gemini_api_key_here
 ```
-*Note: If no API key is specified, NutriMind automatically operates in **Mock Mode**, allowing you to test all capabilities immediately using built-in dietitian metrics.*
+
+_Note: If no API key is specified, NutriMind automatically operates in **Mock Mode**, allowing you to test all capabilities immediately using built-in dietitian metrics._
 
 ### 3. Launch Development Server
+
 Launch the local Vite server:
+
 ```bash
 npm run dev
 ```
+
 Open [http://localhost:5173/](http://localhost:5173/) in your browser to view the application.
 
 ### 4. Build for Production
+
 To bundle the project into optimized, minified static files:
+
 ```bash
 npm run build
 ```
@@ -73,4 +85,5 @@ npm run build
 ---
 
 ## 📄 License
+
 This project is open-source and available under the MIT License.
